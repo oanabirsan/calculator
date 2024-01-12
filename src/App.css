@@ -1,0 +1,69 @@
+.calculator-grid {
+  background-color: #ccdbe0;
+  width: 330px;
+  height: 550px;
+  align-content: center;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 10px 3px 3px 3px rgb(145, 126, 126);
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.back {
+  width: 50px;
+  margin-bottom: -15px;
+  border-radius: 5px;
+  background-color: rgb(200, 229, 219);
+}
+
+body {
+  background-color: #61dafb;
+  justify-content: center;
+  display: flex;
+}
+
+.digits {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 4rem);
+}
+
+
+.output {
+  padding-top: 5px;
+  width: 255px;
+  height: 120px;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+}
+
+.output .previous-operand {
+  color: black;
+  font-size: 1.5rem;
+}
+
+
+.output .current-operand {
+  color: rgb(157, 81, 81);
+  font-size: 2.5rem;
+}
+
+.calculator-grid>button {
+  cursor: pointer;
+
+}
+
+.calculator-grid>button:hover,
+.calculator-grid>button:focus {
+  background-color: aliceblue;
+}
